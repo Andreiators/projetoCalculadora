@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles.css">
+    <title>DevClub Convert-Money</title>
+</head>
+
+<body>
+    <img class="logo" src="./Assets/logo (1).gif" alt="Logo-DevClub-Convert Money">
+    
+    <main>
+        <label>
+            Converter <b>De:</b>
+            <select class="select">
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+             Converter <b>Para:</b>
+            <select class="currency-select">
+                <option value="dolar">US$ Dolar Americano</option>
+                <option value="euro"> € Euro</option>
+            </select>
+        </label>
+
+        <label>
+            Valor:
+            <input class="input-currency" placeholder="R$ 10.000,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-box">
+                <img  src="./Assets/icons8-brasil-circular-50.png"  alt="Logo moeda a converter">
+                <p class="currency">Real BRL</p>
+                <p class="currency-value-to-convert">R$0,00</p>
+            </div>
+
+            <img class="arrow-img" src="./Assets/icons8-flecha-grossa-apontando-para-baixo-80.png" alt="Logo Seta">
+                    
+            <div class="currency-box">
+                <img class="currency-img" src="./Assets/icons8-circular-dos-eua-48.png" alt="Logo Moeda Convertida">
+                <p class="currency" id="currency-name">Dolar USD</p>
+                <p class="currency-value">U$0,00</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
